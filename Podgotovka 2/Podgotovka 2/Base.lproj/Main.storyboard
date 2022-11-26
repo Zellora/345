@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Podgotovka_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBy-gv-tWX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rt7-Ra-241">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 6" translatesAutoresizingMaskIntoConstraints="NO" id="Wem-bj-ixE">
+                                                <rect key="frame" x="87" y="594" width="240" height="193"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-in-Xdt">
+                                                <rect key="frame" x="243" y="436" width="67" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <segue destination="aUb-14-xUm" kind="show" id="9WL-A8-92G"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="oLX-aC-krj"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hcN-7Z-QVF" appends="YES" id="VvS-Qh-Duc"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rt7-Ra-241" firstAttribute="leading" secondItem="EBy-gv-tWX" secondAttribute="leading" id="45M-Xa-9tN"/>
+                                    <constraint firstAttribute="bottom" secondItem="rt7-Ra-241" secondAttribute="bottom" id="NVi-qr-fxJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="rt7-Ra-241" secondAttribute="trailing" id="abj-Mq-dgp"/>
+                                    <constraint firstItem="rt7-Ra-241" firstAttribute="width" secondItem="EBy-gv-tWX" secondAttribute="width" id="jrz-dx-j6v"/>
+                                    <constraint firstItem="rt7-Ra-241" firstAttribute="top" secondItem="EBy-gv-tWX" secondAttribute="top" id="nzZ-ib-tRZ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EBy-gv-tWX" secondAttribute="bottom" id="WAC-ia-cSR"/>
+                            <constraint firstItem="EBy-gv-tWX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iQl-sv-q2P"/>
+                            <constraint firstItem="EBy-gv-tWX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mfS-9J-fcN"/>
+                            <constraint firstItem="EBy-gv-tWX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rjt-aj-At3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gxv-5p-SfX"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="hcN-7Z-QVF">
+                    <connections>
+                        <segue destination="aUb-14-xUm" kind="show" id="Tmh-0c-WOG"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-99" y="-188"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PjQ-3e-L4a">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="aUb-14-xUm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAZ-7e-aXy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 6" translatesAutoresizingMaskIntoConstraints="NO" id="jp2-rf-5b1">
+                                <rect key="frame" x="87" y="308" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ns3-0P-9h1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="eOq-h2-iNB" appends="YES" id="iWq-3a-oFT"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="2fi-IR-Wqd"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7j-XU-bAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="eOq-h2-iNB">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="5Lk-Lj-gN1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="574" y="-289"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9WL-A8-92G"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Rectangle 6" width="131" height="176"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
